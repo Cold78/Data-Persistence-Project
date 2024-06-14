@@ -85,7 +85,7 @@ public class MainManager : MonoBehaviour
             Debug.Log("Nothing displayed");
         }
         Debug.Log("Score :  " + BestScore + " Name: " + BestName + " Current Score:" + m_Points);
-        if (data == null || m_Points > BestScore)
+        if (data == null || m_Points > data.BestScore)
         {
             BestScore = m_Points;
             BestName = MenuManager.Instance.Name;
